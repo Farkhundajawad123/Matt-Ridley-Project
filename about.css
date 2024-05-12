@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Istok Web';
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.header h1{
+    color: #013456;
+}
+
+.header_navigation{
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.header_navigation a{
+    text-decoration: none;
+    color: #013456;
+    padding: 5px;
+    box-shadow: -5px 5px 10px;
+    border-radius: 20px;
+    transition: .5s;
+    font-size: 2.3vw;
+  }
+  
+  .header_navigation a:hover{
+    padding: 5px 10px;
+    color: yellowgreen;
+    transform: scale(1.2);
+  }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15rem;
+    width: 50%;
+    margin: 0px 25px;
+}
+
+.content h2{
+    font-size: 2.365rem;
+    margin-bottom: 2rem;
+}
+
+.content p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    color: black;
+}
+
+.btn{
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #013456;
+  color: white;
+  padding: 12px 24px;
+  width: 80%;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover{
+  background-color: #fad405;
+  color: black;
+  transform: scale(1.1);
+}
+
+.image{
+    width: 50%;
+    border-radius: 50px;
+}
+
+.image img{
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1223px){
+
+    .h1{
+        margin-bottom: 0;
+    }
+    
+    .container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .content{
+        width: 90%;
+        text-align: center;
+        padding: 0 0rem;
+    }
+
+    .image{
+        width: 90%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .image img{
+        width: 100%;
+    }
+}
